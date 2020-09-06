@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div id="header-top">
+        <div id="logo">
+            indiaMart
+        </div>
+        <div class="main-content">
+            <ul>
+                <li><a href="slider/slider.html">Home</a></li>
+                <li><a> About us</a></li>
+                <li>Profile</li>
+                <li>Login</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="header-bottom">
+        <ul>
+            <li>Men</li>
+            <li>Women</li>
+            <li>Electronics</li>
+            <li>Entertainment</li>
+            <li>Reading</li>
+        </ul>
+    </div>
+
+    <div id="slider">
+        <div class="box">
+            <div class="img">
+                <img src="../images/shop1.jpg">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi ullam vitae, illum voluptates accusantium? Ea voluptatibus nesciunt sed quasi, necessitatibus numquam nulla aut placeat molestiae itaque aperiam quia facere? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../images/shop3.jpg">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi ullam vitae, illum voluptates accusantium? Ea voluptatibus nesciunt sed quasi, necessitatibus numquam nulla aut placeat molestiae itaque aperiam quia facere? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../images/shop2.jpg_fit=scale">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi ullam vitae, illum voluptates accusantium? Ea voluptatibus nesciunt sed quasi, necessitatibus numquam nulla aut placeat molestiae itaque aperiam quia facere? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="img">
+                <img src="../images/shop1.jpg">
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium commodi ullam vitae, illum voluptates accusantium? Ea voluptatibus nesciunt sed quasi, necessitatibus numquam nulla aut placeat molestiae itaque aperiam quia facere? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </div>
+        </div>
+
+    </div>
+
+    <button id="clickme">Click me</button>
+    <script>
+        var sliderIndex = 0;
+        var slider = document.getElementsByClassName('box');
+        var i=0;
+        var opacity = 0;
+
+        var left =600;
+        const endit = setInterval(()=>{
+             for(i = 0;i<slider.length;i++)
+             {
+                 slider[i].style.display = "none";
+             }
+
+             sliderIndex++;
+             slider[sliderIndex-1].style.display = "block";
+             if(sliderIndex>3)
+             {
+                 sliderIndex=0;
+             } 
+
+        
+    </script>
+</body>
+</html>
