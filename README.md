@@ -1,3 +1,4 @@
 # crispy-animo
-<h2>Description :alien:</h2>
-<h6>Here I will be uploading all my javascript aniamtions on regular basis</h6>
+
+- Description :alien:
+  - Here I will be uploading all JavaScript codes which I will be learning in the year of 2021 from November - December last.
