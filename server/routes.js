@@ -11,6 +11,7 @@ const requestHandler = (req, res)=>{
         res.write('<head><title>Message</title></head>')
         res.write('<body><form action="/message" method="POST"><input type="text" name ="message"> <button type="submit">Click me</button></form></body>')
         res.write('</html>')
+        console.log("Your Code Run Perfect.")
         return res.end()
     }
     if(url==='/message' && method === "POST"){
